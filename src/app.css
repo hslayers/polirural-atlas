@@ -91,8 +91,12 @@ md-content p, md-content td {
 }
 
 md-content ul {
-    white-space: pre-line;
+    /* white-space: pre-line; */
     list-style: unset;
+}
+
+.infopanel md-content .main-content {
+    padding-bottom: 2em;
 }
 
 .card-list md-card {

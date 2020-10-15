@@ -17,17 +17,27 @@
     <div class="content-body">
         <div class="main-content">
             <h2><span ng-if="featureDetails.region">{{ featureDetails.region }}, </span>{{ featureDetails.country }}</h2>
-            <!-- <p class="content-info" ng-repeat="url in featureDetails.website.split(',')" ng-if="featureDetails.website"><a target="_blank" ng-href="{{url}}">{{ url }}</a></p> -->
-            <div class="content-info" ng-if="featureDetails.links" ng-bind-html="featureDetails.links"></div>
+
+            <h3 ng-if="featureDetails['entrant-type']" class="heading">Entrant type</h3>
+            <p class="content-info" ng-if="featureDetails['entrant-type']" ng-bind-html="featureDetails['entrant-type']"></p>
+
+            <h3 ng-if="featureDetails.gender" class="heading">Gender</h3>
+            <p class="content-info" ng-if="featureDetails.gender" ng-bind-html="featureDetails.gender"></p>
+
+            <h3 ng-if="featureDetails['activity-type']" class="heading">Activity type</h3>
+            <p class="content-info" ng-if="featureDetails['activity-type']" ng-bind-html="featureDetails['activity-type']"></p>
 
             <h3 ng-if="featureDetails.description" class="heading">Description</h3>
             <p class="content-info" ng-if="featureDetails.description" ng-bind-html="featureDetails.description"></p>
 
+            <h3 ng-if="featureDetails['challenges-faced']" class="heading">Challenges Faced</h3>
+            <p class="content-info" ng-if="featureDetails['challenges-faced']" ng-bind-html="featureDetails['challenges-faced']"></p>
+
             <h3 ng-if="featureDetails['success-factors']" class="heading">Success Factors</h3>
             <p class="content-info" ng-if="featureDetails['success-factors']" ng-bind-html="featureDetails['success-factors']"></p>
 
-            <h3 ng-if="featureDetails['challenges-faced']" class="heading">Challenges Faced</h3>
-            <p class="content-info" ng-if="featureDetails['challenges-faced']" ng-bind-html="featureDetails['challenges-faced']"></p>
+            <h3 ng-if="featureDetails.links" class="heading">Useful links</h3>
+            <div class="content-info" ng-if="featureDetails.links" ng-bind-html="featureDetails.links"></div>
 
             <h3 ng-if="featureDetails.videos.length > 0" class="heading">Videos</h3>
             <div ng-if="featureDetails.videos.length > 0" ng-repeat="video in featureDetails.videos" ng-bind-html="parseVideo(video)" class="video">
