@@ -93,8 +93,8 @@ module.value('HsConfig', {
 	default_layers: [
 		new Tile({
 			source: new XYZ({
-				attributions: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
-				url: 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png?lang=en'
+				attributions: ['Maps <a href="http://www.thunderforest.com">Thunderforest</a>', 'Data <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'],
+				url: 'https://tile.thunderforest.com/atlas/{z}/{x}/{y}.png?apikey=820bd076452548f894e0059944475cb9',
 			}),
 			title: 'Base layer',
 			base: true
