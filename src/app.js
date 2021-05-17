@@ -186,7 +186,7 @@ module.value('HsConfig', {
 		center: transform([8.3927408, 46.9205358], 'EPSG:4326', 'EPSG:3857'), //Latitude longitude	to Spherical Mercator
 		zoom: 4,
 		units: 'm',
-		maxZoom: 9,
+		maxZoom: 12,
 		minZoom: 2,
 		constrainResolution: true,
 	}),
