@@ -103,7 +103,7 @@ module.value('HsConfig', {
 			title: 'Polirural atlas of best practices',
 			source: new VectorSource({
 				format: new GeoJSON(),
-				url: 'https://db.atlasbestpractices.com/project-geo-json/4/',
+				url: 'https://db.atlasbestpractices.com/data/project-geo-json/4/',
 			}),
 			style: new Style({
 				image: new Icon(({
